@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>yoo! tis a chat</h1>
+        <input type="button" value="menu/chat" id="hideShow_button" onclick="hideShow()">
+    </header>
+    <aside id="aside" class="hide">
+        <p>hallo</p>
+
+        <label for="ipAddress">ipaddress:</label>
+        <input type="text" id="ipAddress">
+
+        <label for="username">username:</label>
+        <input type="text" id="username">
+    </aside>
+    <section id="section" class="">
+        <div class="scroll">
+            <div id="messageList">
+
+            </div>
+        </div>
+
+        <div class="messageInputDiv">
+            <input type="text" id="messageInput">
+            <input type="button" value="send" id="sendButton" onclick="sendMessage()">
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
